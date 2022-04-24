@@ -10,6 +10,11 @@ public class GameService {
         System.out.println("시도할 회수");
         CarMoveService carMoveService = new CarMoveService(Console.readLine());
         carMoveService.move(inputCarService);
+
+        ResultGameService resultGameService =
+                new ResultGameService(inputCarService.getCarNames(), carMoveService.getCarMoveCount());
+        resultGameService.resultGame();
+        resultGameService.resultGameWin();
     }
 
 }

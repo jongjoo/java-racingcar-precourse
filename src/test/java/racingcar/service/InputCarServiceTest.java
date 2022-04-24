@@ -16,7 +16,7 @@ public class InputCarServiceTest {
     }
 
     InputCarServiceTest() {
-        String input = "pobi11,woni,jun";
+        String input = "pobi,woni,jun";
         inputCarService = new InputCarService(input);
     }
 
