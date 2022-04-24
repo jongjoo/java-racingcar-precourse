@@ -26,8 +26,8 @@ public class ResultGameService {
 
     public void resultGameWin() {
         List<Integer> list = resultWinner();
+        soloWinner(list);
         coWinner(list);
-        winner(list);
     }
 
     private void coWinner(List<Integer> list) {
@@ -59,7 +59,7 @@ public class ResultGameService {
         }
     }
 
-    private void winner(List<Integer> list) {
+    private void soloWinner(List<Integer> list) {
         if (list.size() == 1) {
             System.out.println("단독 우승자 안내 문구");
             StringBuilder stringBuilder = new StringBuilder();

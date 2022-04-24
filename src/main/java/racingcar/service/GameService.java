@@ -10,9 +10,11 @@ public class GameService {
         System.out.println("시도할 회수");
         CarMoveService carMoveService = new CarMoveService(Console.readLine());
         carMoveService.move(inputCarService);
+        resultGame(inputCarService.getCarNames(), carMoveService.getCarMoveCount());
+    }
 
-        ResultGameService resultGameService =
-                new ResultGameService(inputCarService.getCarNames(), carMoveService.getCarMoveCount());
+    private void resultGame(String[] names, int[] counts) {
+        ResultGameService resultGameService = new ResultGameService(names, counts);
         resultGameService.resultGame();
         resultGameService.resultGameWin();
     }
