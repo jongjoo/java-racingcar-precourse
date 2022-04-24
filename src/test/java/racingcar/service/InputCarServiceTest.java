@@ -1,11 +1,8 @@
 package racingcar.service;
 
-import camp.nextstep.edu.missionutils.Console;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-
-import java.util.Scanner;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
