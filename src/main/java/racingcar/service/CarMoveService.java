@@ -11,6 +11,10 @@ public class CarMoveService {
         this.moveCount = convertStringToInt(moveCount);
     }
 
+    public int[] getCarMoveCount(){
+        return carMoveCount;
+    }
+
     private int convertStringToInt(String str) {
         int i = 0;
         try {
